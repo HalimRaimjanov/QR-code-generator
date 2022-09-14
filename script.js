@@ -1,3 +1,6 @@
+// importScripts ('jquery.min.js");
+// import {QRCode} from './qrcode.min.js';
+
 let qrcode = new QRCode("qrcode");
 
 function makeCode() {
