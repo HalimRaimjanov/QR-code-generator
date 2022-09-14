@@ -1,6 +1,3 @@
-// importScripts ('jquery.min.js");
-// import {QRCode} from './qrcode.min.js';
-
 let qrcode = new QRCode("qrcode");
 
 function makeCode() {
@@ -16,11 +13,11 @@ function makeCode() {
 makeCode();
 
 $("#text").
-  on("blur", function () {
-    makeCode();
-  }).
-  on("keydown", function (e) {
-    if (e.keyCode == 13) {
-      makeCode();
-    }
-  });
+    on("blur", function () {
+        makeCode();
+    }).
+    on("keydown", function (e) {
+        if (e.keyCode == 13) {
+            makeCode();
+        }
+    });
